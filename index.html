@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,-50" />
+  <link rel="stylesheet" href="style.css">
+  <title>Blog</title>
+</head>
+<body>
+  <header>Blog</header>
+  <div class="add">
+    <div class="add-nav">
+      <span class="material-symbols-outlined" id="showForm">add_circle</span>
+      <p>Dodaj nowy post</p>
+    </div>
+    <div class="form">
+      <p>
+        Tytuł: 
+        <input type="text" id="title">
+      </p>
+      <p>
+        Treść:
+        <input type="text" id="content">
+      </p>
+      <p>
+        Obrazek:
+        <input type="file" id="file">
+      </p>
+      <div class="colorPicker">
+        <b>Wybierz kolor posta:</b>
+        <p>
+          Czerwony: 
+          <input type="range" min="0" max="255" id="red" value="0" class="red">
+        </p>
+        <p>
+          Zielony: 
+          <input type="range" min="0" max="255" id="green" value="0" class="green">
+        </p>
+        <p>
+          Niebieski: 
+          <input type="range" min="0" max="255" id="blue" value="0" class="blue">
+        </p>
+        <div class="pickedColor"></div>
+      </div>
+      <button id="addPost">Dodaj nowy post</button>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="post">
+      <div class="img">
+        <img src="img/Img1.jpg">
+      </div>
+      <h2 class="title">Post 1 - tytuł</h2>
+      <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget diam ullamcorper, varius eros eget, fermentum tortor. Suspendisse laoreet magna quis pulvinar tempus. Aliquam erat volutpat. Proin tincidunt mattis posuere.</p>
+      <div class="btnAndStars">
+        <button class="more">Czytaj więcej</button>
+        <div class="stars">
+          <span class="star" data-rating="1">&starf;</span>
+          <span class="star" data-rating="2">&starf;</span>
+          <span class="star" data-rating="3">&starf;</span>
+          <span class="star" data-rating="4">&starf;</span>
+          <span class="star" data-rating="5">&starf;</span>
+        </div>
+        <div class="rating-value">0/5</div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
